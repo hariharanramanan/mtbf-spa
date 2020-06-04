@@ -76,7 +76,7 @@ export default function TemporaryDrawer() {
 
   return (
     <div>
-      {["left", "right"].map((anchor) => (
+      {["left", "right", "bottom"].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
           <SwipeableDrawer
